@@ -11,9 +11,11 @@ RavineEasy() {
         "Sniper", ["sniper", [1030, 185]]
     )
 
-    StartGame()
+
     Place("Dart")
     Place("Druid A")
+
+    StartGame()
 
     WaitForRound(2)
     Upgrade("Dart", 0, 1, 1)        ; 000 -> 011

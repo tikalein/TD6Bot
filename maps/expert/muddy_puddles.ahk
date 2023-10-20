@@ -11,10 +11,12 @@ MuddyPuddlesEasy() {
         "Druid", ["druid", [520, 800]]
     )
 
-    StartGame()
+
     Place("Sub")
     Place("Dart A")
 
+    StartGame()
+    
     WaitForRound(3)
     Upgrade("Sub", 0, 0, 1)         ; 000 -> 001
 

@@ -10,10 +10,12 @@ WorkshopEasy() {
         "Sniper", ["sniper", [1015, 425]]
     )
 
-    StartGame()
+
     Place("Dart")
     Place("Druid")
 
+    StartGame()
+    
     WaitForRound(2)
     Upgrade("Druid", 0, 1, 0)       ; 000 -> 010
 

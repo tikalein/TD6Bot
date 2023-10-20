@@ -9,9 +9,11 @@ InfernalEasy() {
         "Sniper", ["sniper", [1200, 820]]
     )
 
-    StartGame()
+
     Place("Dart")
     Upgrade("Dart", 0, 1, 2)        ; 000 -> 012
+
+    StartGame()
 
     WaitForRound(4)
     Upgrade("Dart", 0, 0, 1)        ; 012 -> 013

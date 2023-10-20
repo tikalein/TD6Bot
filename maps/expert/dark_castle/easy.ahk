@@ -6,10 +6,11 @@ DarkCastleEasy() {
         "Spike", ["spike", [1520, 560]]
     )
 
-    StartGame()
+
     Place("Dart")
     Place("Wizard")
-
+    StartGame()
+    
     WaitForRound(3)
     Place("Sub")
     Targeting("Sub", 3)             ; Normal -> Strong

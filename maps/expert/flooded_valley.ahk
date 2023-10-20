@@ -9,9 +9,11 @@ FloodedValleyEasy() {
         "Sniper", ["sniper", [250, 760]]
     )
 
-    StartGame()
+
     Place("Sub")
 
+    StartGame()
+    
     WaitForRound(2)
     Upgrade("Sub", 0, 0, 1)         ; 000 -> 001
 

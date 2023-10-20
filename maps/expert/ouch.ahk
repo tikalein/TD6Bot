@@ -10,10 +10,12 @@ OuchEasy() {
         "Sniper", ["sniper", [670, 90]]
     )
 
-    StartGame()
+
     Place("Sub")
     Place("Dart A")
     Place("Dart B")
+
+    StartGame()
 
     WaitForRound(4)
     Upgrade("Sub", 0, 0, 1)         ; 000 -> 001

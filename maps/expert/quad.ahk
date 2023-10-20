@@ -10,10 +10,12 @@ QuadEasy() {
         "Druid", ["druid", [790, 260]]
     )
 
-    StartGame()
+
     Place("Dart A")
     Place("Dart B")
     Place("Sniper")
+
+    StartGame()
 
     WaitForRound(4)
     Place("Druid")

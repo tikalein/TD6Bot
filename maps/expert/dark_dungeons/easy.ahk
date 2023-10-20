@@ -9,12 +9,14 @@ DarkDungeonsEasy() {
         "Sub", ["sub", [1360, 830]],
     )
 
-    StartGame()
+
 
     Place("Dart A")
     Place("Dart B")
     Place("Sub")
 
+    StartGame()
+    
     WaitForRound(3)
     Upgrade("Dart A",0,1,0)
     Upgrade("Dart B",0,1,0)

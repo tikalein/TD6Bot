@@ -12,9 +12,11 @@ BloodyPuddlesEasy() {
         "Boat", ["boat", [510, 710]]
     )
 
-    StartGame()
+
     Place("Dart A")
     Place("Sub")
+
+    StartGame()
 
     WaitForRound(3)
     Place("Druid")
