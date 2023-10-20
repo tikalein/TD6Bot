@@ -1,0 +1,11 @@
+#Include ouch.ahk
+#Include quad.ahk
+#Include ravine.ahk
+#Include infernal.ahk
+#Include workshop.ahk
+#Include sanctuary.ahk
+#Include dark_castle\main.ahk
+#Include dark_dungeons\main.ahk
+#Include muddy_puddles.ahk
+#Include bloody_puddles.ahk
+#Include flooded_valley.ahk
