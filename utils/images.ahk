@@ -11,7 +11,7 @@ ClickImage(imageName, delay := 1000, options := "", xMin := 0, yMin := 0, xMax :
         Click(x,y)
         Sleep(delay)
         return true
-    }
+    } else return false
 }
 
 SearchRound(round) {

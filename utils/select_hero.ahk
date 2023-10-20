@@ -12,8 +12,9 @@ SelectHero() {
             return
         }
     }
-    LogMsg("Changing the hero")
-    ClickImage("hero\change")
+    LogMsg("Changing the hero to " . hero)
+    ClickImage("hero\change",2000)
+    LogArr(HERO_SKINS[hero])
     for style in HERO_SKINS[hero] {
         if ClickImage("hero\" hero "\select_" style) {
             ClickImage("hero\select")
