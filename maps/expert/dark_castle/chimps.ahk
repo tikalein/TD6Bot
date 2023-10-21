@@ -98,4 +98,6 @@ global TS := Map(
     WaitForRound(97)
     Upgrade("Spike 1",0,0,1)
     Upgrade("Alch 3",1,0,0)
+    WaitForRound(100)
+    Send(KEYS["ability_2"])
 }
