@@ -1,131 +1,101 @@
 DarkCastleChimps() {
-    global TS := Map(
-        "Obyn", ["hero", [865, 447]],
-        "Dart A", ["dart", [739, 656]],
-        "Dart B", ["dart", [688, 691]],
-        "Sub A", ["sub", [1083, 690]],
-        "Sub B", ["sub", [1086, 398]],
-        "Alch A", ["alch", [1011, 657]],
-        "Alch B", ["alch", [666, 388]],
-        "Alch C", ["alch", [711, 346]],
-        "Druid A", ["druid", [715, 433]],
-        "Druid B", ["druid", [789, 447]],
-        "Druid C", ["druid", [941, 448]],
-        "Druid D", ["druid", [766, 384]],
-        "Druid E", ["druid", [842, 384]],
-        "Druid F", ["druid", [918, 385]],
-        "Spike", ["spike", [1022, 441]],
-        "Village", ["village", [869, 303]]
-    )
+global TS := Map(
+        "Dart 1", ["dart", [730, 657]],
+        "Sub 1", ["sub", [1083, 690]],
+        "Dart 2", ["dart", [683, 700]],
+        "Hero 1", ["hero", [1018-76*2, 446]],
+        "Alch 1", ["alch",[1013,659]],
+        "Druid 1", ["druid", [1018-76*3, 446]],
+        "Druid 2", ["druid", [1018-76, 446]],
+        "Druid 3", ["druid", [1018, 446]],
+        "Druid 4", ["druid", [917-76*2, 446-66]],
+        "Druid 5", ["druid", [917-76*1, 446-66]],
+        "Druid 6", ["druid", [917, 446-66]],
+        "Village 1", ["village", [888, 446-66-81]],
+        "Alch 2", ["alch",[720,439]],
+        "Alch 3", ["alch",[694,383]],
+        "Spike 1", ["spike", [998, 446-70]],
+          )
 
-    Place("Dart A")
-    Place("Sub A")
+    Place("Dart 1")          
+    Place("Sub 1")
 
-    StartGame()
-
+    StartGame()          
     WaitForRound(7)
-    Place("Dart B")
-
-    WaitForRound(10)
-    Place("Obyn", true)
-
-    WaitForRound(11)
-    Upgrade("Sub A", 1, 0, 0)           ; 000 -> 100
-
-    WaitForRound(14)
-    Upgrade("Sub A", 1, 0, 0)           ; 100 -> 200
-
-    WaitForRound(15)
-    Upgrade("Sub A", 0, 0, 1, true)     ; 200 -> 201
-
-    WaitForRound(19)
-    Upgrade("Sub A", 0, 0, 1, true)     ; 201 -> 202
-
-    WaitForRound(20)
-    Upgrade("Dart A", 0, 0, 2, true)    ; 000 -> 002
-
-    WaitForRound(25)
-    Upgrade("Sub A", 0, 0, 1)           ; 202 -> 203
-
-    WaitForRound(27)
-    Place("Alch A")
-
-    WaitForRound(28)
-    Upgrade("Alch A", 2, 0, 0)          ; 000 -> 200
-
-    WaitForRound(32)
-    Upgrade("Alch A", 1, 0, 0)          ; 200 -> 300
-
-    WaitForRound(33)
-    Upgrade("Alch A", 0, 2, 0)          ; 300 -> 320
-
-    WaitForRound(37)
-    Upgrade("Alch A", 1, 0, 0)          ; 320 -> 420
-
-    WaitForRound(39)
-    Place("Druid A")
-    Place("Druid B")
-    Place("Druid C")
-    Place("Druid D")
-    Place("Druid E")
-    Place("Druid F")
-
-    WaitForRound(40)
-    Place("Village")
-
+    Place("Dart 2")
+    WaitForRound(10)         
+    Place("Hero 1")          
+    WaitForRound(11)              
+    Upgrade("Sub 1",1,0,0)
+    WaitForRound(13)              
+    Upgrade("Sub 1",1,0,0)
+    WaitForRound(15)              
+    Upgrade("Sub 1",0,0,1)
+    WaitForRound(19)              
+    Upgrade("Sub 1",0,0,1)
+    WaitForRound(21) 
+    Upgrade("Dart 1",0,0,2)
+    WaitForRound(25) 
+    Upgrade("Sub 1",0,0,1)
+    WaitForRound(27) 
+    Place("Alch 1")
+    WaitForRound(28)           
+    Upgrade("Alch 1",2,0,0)
+    WaitForRound(32)           
+    Upgrade("Alch 1",1,0,0)
+    WaitForRound(33)           
+    Upgrade("Alch 1",0,2,0)
+    WaitForRound(37)           
+    Upgrade("Sub 1",0,0,1)
+    WaitForRound(39)           
+    Upgrade("Alch 1",1,0,0)
+    WaitForRound(40)    
+    Place("Druid 1")
+    Place("Druid 2")
     WaitForRound(42)
-    Upgrade("Village", 2, 0, 0)         ; 000 -> 200
-
+    Place("Druid 3")
+    Place("Druid 4")
+    Place("Druid 5")
+    Place("Druid 6")
+    Place("Village 1")
     WaitForRound(44)
-    Upgrade("Village", 0, 2, 0)         ; 200 -> 220
-
+    Upgrade("Village 1",0,2,0)
     WaitForRound(45)
-    Upgrade("Druid A", 0, 1, 4, true)   ; 000 -> 014
-
+    Upgrade("Village 1",2,0,0)
+    WaitForRound(46)
+    Upgrade("Druid 1",0,1,3)
+    WaitForRound(48)
+    Upgrade("Druid 1",0,0,1)
     WaitForRound(49)
-    Upgrade("Druid B", 0, 1, 4)         ; 000 -> 014
-
+    Upgrade("Druid 2",0,1,4)
     WaitForRound(50)
-    Upgrade("Druid C", 0, 1, 4)         ; 000 -> 014
-
-    WaitForRound(51)
-    Upgrade("Druid D", 0, 1, 4)         ; 000 -> 014
-
-    WaitForRound(54)
-    Upgrade("Druid E", 0, 1, 4)         ; 000 -> 014
-
+    Upgrade("Druid 3",0,1,4)
+    WaitForRound(52)
+    Upgrade("Druid 4",0,1,4)
     WaitForRound(55)
-    Upgrade("Druid F", 0, 1, 4, true)   ; 000 -> 014
-
+    Upgrade("Druid 5",0,1,4)
     WaitForRound(57)
-    Place("Alch B")
-    Upgrade("Alch B", 3, 0, 0)          ; 000 -> 300
-
-    WaitForRound(59)
-    Upgrade("Alch B", 1, 2, 0)          ; 300 -> 420
-
+    Upgrade("Druid 6",0,1,4)
+    WaitForRound(58)
+    Place("Alch 2")
+    Upgrade("Alch 2",3,0,0)
+    WaitForRound(61)
+    Upgrade("Alch 2",1,2,0)
     WaitForRound(62)
-    Place("Alch C")
-    Upgrade("Alch C", 3, 2, 0)          ; 000 -> 320
-
-    WaitForRound(82)
-    Upgrade("Druid A", 0, 0, 1, true)   ; 014 -> 015
-
+    Place("Alch 3")
+    WaitForRound(63)
+    Upgrade("Alch 3",3,2,0)
+    WaitForRound(83)
+    Upgrade("Druid 1",0,0,1)
     WaitForRound(84)
-    Upgrade("Village", 0, 1, 0)         ; 220 -> 230
-
-    WaitForRound(86)
-    Place("Spike")
-    Upgrade("Spike", 0, 2, 4)           ; 000 -> 024
-    Targeting("Spike", 1)               ; Normal -> Close
-
+    Upgrade("Village 1",0,1,0)
+    WaitForRound(85)
+    Place("Spike 1")
+    Upgrade("Spike 1",0,2,3)
+    Targeting("Spike 1",1)
     WaitForRound(87)
-    Upgrade("Alch C", 1, 0, 0)          ; 320 -> 420
-
-    WaitForRound(96)
-    Upgrade("Spike", 0, 0, 1, true)     ; 024 -> 025
-
-    WaitForRound(98)
-    Place("Sub B")
-    Upgrade("Sub B", 2, 4, 0, true)     ; 000 -> 240
+    Upgrade("Spike 1",0,0,1)
+    WaitForRound(97)
+    Upgrade("Spike 1",0,0,1)
+    Upgrade("Alch 3",1,0,0)
 }
