@@ -3,7 +3,7 @@
 
 DARK_DUNGEONS_DATA := Map(
     "easy", [DarkDungeonsEasy, ""],
-    "impoppable", [DarkDungeonsImpoppable, "sauda"],
+ 
     
     )
 

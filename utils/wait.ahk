@@ -29,6 +29,7 @@ WaitForRound(round, delay := 0) {
             break
         }
         CheckLevelUp()
+        Sleep(10)
     }
 }
 

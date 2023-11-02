@@ -6,9 +6,9 @@ KEYS := Map(
     "bomb",         "{vk45}",
     "tack",         "{vk52}",
     "ice",          "{vk54}",
-    "glue",         "{vk59}",
+    "glue",         "{vk5A}",
 
-    "sniper",       "{vk5A}",       ; Military towers
+    "sniper",       "{vk59}",       ; Military towers
     "sub",          "{vk58}",
     "boat",         "{vk43}",
     "ace",          "{vk56}",
