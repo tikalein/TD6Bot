@@ -15,7 +15,7 @@ DARK_CASTLE_DATA := Map(
     "deflation", [DarkCastleDeflation, "quincy"],
     "hard", [DarkCastleHard, ""],
     "alternate", [DarkCastleAlternate, "benjamin"],
-    "impoppable", [DarkCastleImpoppable, "benjamin"],
+    "impoppable", [DarkCastleImpoppable, "obyn"],
     "chimps", [DarkCastleChimps, "obyn"],
     "apopalypse", [DarkCastleApopalypse, ""],
     "medium", [DarkCastleMedium, ""],
