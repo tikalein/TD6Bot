@@ -29,7 +29,7 @@ Start() {
             Case "collect":
                 OpenBoxes()
             Case "event":
-                ClickImage("buttons\play_collect")
+                ClickImage("buttons\back")
             Case "victory":
                 ClickImage("buttons\next")
             Case "victory_menu":
