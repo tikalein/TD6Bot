@@ -4,7 +4,7 @@ defeats := 0
 
 currentRound := 0
 currentMap := [0, 0]
-mouseRest := [1, 1]
+mouseRest := [50, 1]
 defeated := false
 
 states := [

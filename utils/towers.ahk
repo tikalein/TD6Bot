@@ -11,11 +11,11 @@ Place(tower, asap := true) {
         Loop {
             Send(KEYS[type])
             Sleep(100)
-            MouseMove(x,y)
-            Sleep(100)
             if SearchImage("buttons\close_place", "", 1570, 85, 1635, 150) {
                 break
             }
+            MouseMove(mouseRest[1], mouseRest[2])
+
             if SearchImage("states\defeat") or SearchImage("states\victory") {
                 global defeated := true
                 return
@@ -25,9 +25,9 @@ Place(tower, asap := true) {
     } else {
         Send(KEYS[type])
         Sleep(100)
-        MouseMove(x,y)
-        Sleep(100)
     }
+    MouseMove(x,y,0)
+    Sleep(100)
     Click(x,y)          ; Place Tower
     Sleep(200)
 }
@@ -56,8 +56,11 @@ Upgrade(tower, topCount, middleCount, bottomCount, asap := true) {
 
     Click(x,y)          ; Open Tower
     Sleep(100)
+    MouseMove(mouseRest[1], mouseRest[2])
+    LogMsg(mouseRest[1] . "," . mouseRest[2])
     Loop topCount {
         if asap {
+            
             WaitForUpgrade(1)
         }
         Send(KEYS["upgrade_1"])
@@ -65,6 +68,7 @@ Upgrade(tower, topCount, middleCount, bottomCount, asap := true) {
     }
     Loop middleCount {
         if asap {
+            
             WaitForUpgrade(2)
         }
         Send(KEYS["upgrade_2"])
@@ -72,13 +76,16 @@ Upgrade(tower, topCount, middleCount, bottomCount, asap := true) {
     }
     Loop bottomCount {
         if asap {
+            
             WaitForUpgrade(3)
         }
         Send(KEYS["upgrade_3"])
         Sleep(100)
     }
+
     Send("{Esc}")       ; Close Tower
     Sleep(100)
+    MouseMove(x, y)
 }
 
 Merge(tower_1, tower_2) {
