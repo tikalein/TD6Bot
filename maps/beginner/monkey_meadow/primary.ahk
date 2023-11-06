@@ -1,0 +1,56 @@
+MonkeyMeadowPrimary() {
+    	global TS := Map(
+		"Glue 01", ["glue", [258,405]],
+		"Hero 01", ["hero", [328,390]],
+		"Bomb 01", ["bomb", [252,503]],
+		"Ice 01", ["ice", [193,407]],
+		"Dart 01", ["dart", [350,497]],
+		"Bomb 02", ["bomb", [319,552]],
+		)
+	Place("Glue 01")
+	Place("Hero 01")
+    StartGame()
+	WaitForRound(2)
+	Place("Bomb 01")
+	WaitForRound(3)
+	Upgrade("Glue 01",0,1,0)
+	WaitForRound(4)
+	Upgrade("Bomb 01",0,0,1)
+	WaitForRound(5)
+	Upgrade("Bomb 01",0,0,1)
+	WaitForRound(9)
+	Upgrade("Bomb 01",0,0,1)
+	WaitForRound(11)
+	Upgrade("Bomb 01",1,0,0)
+	WaitForRound(13)
+	Upgrade("Bomb 01",1,0,0)
+	WaitForRound(15)
+	Place("Ice 01")
+	Upgrade("Ice 01",1,0,0)
+	WaitForRound(16)
+	Upgrade("Ice 01",1,0,0)
+	WaitForRound(17)
+	Upgrade("Glue 01",0,0,1)
+	WaitForRound(19)
+	Upgrade("Glue 01",0,0,1)
+	Upgrade("Ice 01",0,1,0)
+	WaitForRound(21)
+	Upgrade("Ice 01",0,1,0)
+	WaitForRound(28)
+	Upgrade("Ice 01",0,1,0)
+	WaitForRound(34)
+	Upgrade("Bomb 01",0,0,1)
+	WaitForRound(35)
+	Place("Dart 01")
+	Upgrade("Dart 01",0,1,3)
+	WaitForRound(36)
+	Upgrade("Dart 01",0,1,0)
+	WaitForRound(37)
+	Upgrade("Dart 01",0,0,1)
+	WaitForRound(38)
+	Place("Bomb 02")
+	Upgrade("Bomb 02",0,0,3)
+	WaitForRound(39)
+	Upgrade("Bomb 02",2,0,0)
+	
+}

@@ -1,5 +1,5 @@
 difficulty := ""
-victories := 68
+victories := 44
 defeats := 0
 
 currentRound := 0

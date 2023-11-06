@@ -73,16 +73,18 @@ CheckSettings() {
     }
     LogMsg("Quick settings checked")
     global changeSettings := false
+    Sleep(150)
     Send("{Esc}")
     Sleep(1500)
     return
 }
 
 InGame() {
-    ClickImage("buttons\ok", 1000, "*TransBlack", 900, 720, 1000, 790)
-    if changeSettings {
-        CheckSettings()
-    }
+ 
+    Sleep(150)
+     
+    ClickImage("buttons\ok", 250, "*TransBlack", 900, 720, 1000, 790) 
+
     if currentMap[1] == 0 or currentMap[2] == 0 {
         Todo()
         return

@@ -1,4 +1,4 @@
-#Include monkey_meadow.ahk
+#Include monkey_meadow\main.ahk
 #Include tree_stump.ahk
 #Include town_center.ahk
 #Include middle_of_the_road.ahk

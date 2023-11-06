@@ -64,7 +64,7 @@ Upgrade(tower, topCount, middleCount, bottomCount, asap := true) {
             WaitForUpgrade(1)
         }
         Send(KEYS["upgrade_1"])
-        Sleep(100)
+        Sleep(200)
     }
     Loop middleCount {
         if asap {
@@ -72,7 +72,7 @@ Upgrade(tower, topCount, middleCount, bottomCount, asap := true) {
             WaitForUpgrade(2)
         }
         Send(KEYS["upgrade_2"])
-        Sleep(100)
+        Sleep(200)
     }
     Loop bottomCount {
         if asap {
@@ -80,11 +80,11 @@ Upgrade(tower, topCount, middleCount, bottomCount, asap := true) {
             WaitForUpgrade(3)
         }
         Send(KEYS["upgrade_3"])
-        Sleep(100)
+        Sleep(200)
     }
 
     Send("{Esc}")       ; Close Tower
-    Sleep(100)
+    Sleep(200)
     MouseMove(x, y)
 }
 
