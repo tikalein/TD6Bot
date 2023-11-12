@@ -81,7 +81,7 @@ CheckSettings() {
 
 InGame() {
  
-    Sleep(150)
+    Sleep(1000)
      
     ClickImage("buttons\ok", 250, "*TransBlack", 900, 720, 1000, 790) 
 
@@ -103,7 +103,7 @@ InGame() {
     global defeated := false
     global difficulty := ""
     global currentMap := [0, 0]
-    global mouseRest := [1, 1]
+    global mouseRest := [50, 1]
     global currentRound := 0
 }
 

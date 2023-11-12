@@ -2,6 +2,7 @@
 #Include deflation.ahk
 #Include hard.ahk
 #Include military.ahk
+#Include alternate.ahk
 
 
 MONKEY_MEADOW_DATA := Map(
@@ -13,5 +14,6 @@ MONKEY_MEADOW_DATA := Map(
     "reverse",[MonkeyMeadowHard, "quincy"],
     "military",[MonkeyMeadowMilitary, "quincy"],
     "apopalypse",[MonkeyMeadowHard, "quincy"],
+    "alternate",[MonkeyMeadowAlternate, "obyn"],
     
 )

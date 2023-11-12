@@ -1,10 +1,10 @@
 difficulty := ""
-victories := 44
+victories := 55
 defeats := 0
 
 currentRound := 0
 currentMap := [0, 0]
-mouseRest := [50, 1]
+mouseRest := [1, 1]
 defeated := false
 
 states := [
